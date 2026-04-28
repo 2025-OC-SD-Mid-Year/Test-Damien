@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    var eggs = prompt("Enter number of eggs ordered:");
+    eggs = parseInt(eggs);
+
+    var dozenPrice = 3.25;
+    var singlePrice = 0.45;
+
+    var dozens = Math.floor(eggs / 12);
+    var looseEggs = eggs % 12;
+
+    var totalCost = (dozens * dozenPrice) + (looseEggs * singlePrice);
+
+    document.write("You ordered " + eggs + " eggs. ");
+    document.write("That's " + dozens + " dozen at $3.25 per dozen and ");
+    document.write(looseEggs + " loose eggs at 45 cents each ");
+    document.write("for a total of $" + totalCost.toFixed(2));
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
